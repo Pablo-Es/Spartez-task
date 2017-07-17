@@ -1,0 +1,43 @@
+.posts {
+    display: flex;
+    flex-flow: row wrap;
+   justify-content: space-between;
+   margin-top: 43px;
+   
+  
+    &__article {
+        flex: 0 250px;
+        margin-bottom: 43px;
+        background: @baseWhite;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px #a4a8a9;
+        @media (max-width: 634px) {
+        flex: 100%;
+  }
+        
+    }
+    &__main-content {
+        padding: 15px 15px 0;
+        border-bottom: 1px solid @baseGreyLight; 
+    }
+ 
+    &__article--img {
+        display: flex;
+        position: relative;
+        padding: 0;
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px 17px;
+        
+        }
+    &__footer--img {
+        position: absolute;
+        flex-wrap: wrap;
+        width: 250px;
+        padding: 0 15px;
+        bottom: 15px;
+        border-top:none;
+    }
+}
